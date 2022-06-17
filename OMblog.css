@@ -1,7 +1,7 @@
 /* this is how to write a comment */ 
 
 body, article, button, h1, h2, h3, h4, h5, h6, footer  {
-	font-family: Comic Sans MS, Comic Sans, cursive		}
+	font-family: "Courier New", monospace;		}
 
 
 --golden-poppy: #fac60eff;
