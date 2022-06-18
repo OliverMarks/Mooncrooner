@@ -346,6 +346,12 @@ footer {
 
 /* Blog index CSS */ 
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+
 .articlewrapperblogpost { 
 	display: grid;    
 	  grid-template-columns: 1fr;
@@ -379,7 +385,7 @@ footer {
 	padding:15px; 
 	margin-top:0; 
 }
-
+}
 
 #bheader {
 	padding: 20px; 
