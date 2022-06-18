@@ -366,7 +366,7 @@ footer {
 	margin bottom: 50px;
 	 
 }
-}
+
 
 .dolimg {  /* needs to be better positioned */ 
 	height:200px;
@@ -374,6 +374,7 @@ footer {
   float: right;
 	padding:15px; 
 	margin-top:0; 
+}
 }
 
 
