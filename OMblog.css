@@ -71,16 +71,14 @@ header {
 
 
 /* formatting for content previews*/ 
-
+@media screen and (max-width: 767px) {
 .wrap { 
 	display:grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto; 
 
 
-} 
-@media screen and (max-width: 767px) {
-
+}
 
 .articlewrapper { 
 	display: grid;    
@@ -91,8 +89,6 @@ header {
 	grid-column-gap:1px;
 	
 } 
-}
-@media screen and (max-width: 767px) {
 
 
 .sidewrapper { 
