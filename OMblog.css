@@ -71,7 +71,7 @@ header {
 
 
 /* formatting for content previews*/ 
-@media screen and (max-width: 767px) {
+
 .wrap { 
 	display:grid;
 	grid-template-columns: repeat(3, 1fr);
