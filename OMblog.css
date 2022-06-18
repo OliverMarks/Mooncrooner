@@ -350,7 +350,7 @@ footer {
 
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 480px) { 
+	and (max-device-width : 480px) { .articlewrapperblogpost, .article1blogpost .dolimg }
 	  
 .articlewrapperblogpost { 
 	display: grid;    
@@ -382,7 +382,7 @@ and (max-device-width : 480px) {
   float: right;
 	padding:15px; 
 	margin-top:0; 
-}
+
 }
 
 #bheader {
