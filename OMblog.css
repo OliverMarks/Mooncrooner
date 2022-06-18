@@ -10,8 +10,6 @@ body, article, button, h1, h2, h3, h4, h5, h6, footer  {
 --cultured: #f1edeeff;
 --oxford-blue: #011936ff;
 
-@media screen and (max-width: 767px) {.wrap }
-
 
 
 
@@ -347,10 +345,6 @@ footer {
 
 
 /* Blog index CSS */ 
-
-@media only screen 
-and (min-device-width : 320px) 
-	and (max-device-width : 480px) { .articlewrapperblogpost, .article1blogpost .dolimg }
 	  
 .articlewrapperblogpost { 
 	display: grid;    
