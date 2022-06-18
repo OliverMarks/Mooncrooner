@@ -79,6 +79,8 @@ header {
 
 
 } 
+@media screen and (max-width: 767px) {
+
 
 .articlewrapper { 
 	display: grid;    
@@ -89,6 +91,9 @@ header {
 	grid-column-gap:1px;
 	
 } 
+}
+@media screen and (max-width: 767px) {
+
 
 .sidewrapper { 
 	display: grid;
@@ -100,7 +105,7 @@ header {
 	justify-content: center;
 }
 
-
+}
 #article1 {
 	display: grid; 
 	grid-column: 1 / 3;
