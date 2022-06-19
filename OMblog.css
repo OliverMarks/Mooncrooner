@@ -110,10 +110,10 @@ header {
 	padding: 10px; 
 	border-style: solid; 
 	border-width: medium;
-	margin-top: 25px; 
-	margin-right: 100px; 
-	margin-left: 100px; 
-	margin bottom: 50px;
+	margin-top: 2%; 
+	margin-right: 4%; 
+	margin-left: 4%; 
+	margin bottom: 2%;;
 	 
 }
 
@@ -131,8 +131,8 @@ h3, h5{
 	width: 1fr; 
 	border-style: solid; 
 	border-width: medium;  
-	margin-top: 25px; 
-	margin-right: 100px; 
+	margin-top: 2%; 
+	margin-right: 4%; 
 	align-self: start; 
 }
 
@@ -143,8 +143,8 @@ h3, h5{
 	padding: 10px; 
 	border-style: solid; 
 	border-width: medium; 
-	margin-right: 100px; 
-	margin-bottom:50px; 
+	margin-right: 4%; 
+	margin-bottom:2%; 
 	vertical-align: center; 
 	text-align: center;        
 	align-self: start; 
@@ -334,7 +334,12 @@ footer {
 
 
 
-
+/*mobile compatibility*/ 
+	@media only screen and (max-width: 768px) {
+    .wrap {
+       display: block;
+    }
+}
 
 
 
