@@ -1,0 +1,29 @@
+body { 
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+.albumgrid { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.albumcard { 
+   
+}
+
+.albumcard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px -5px rgba(10, 16, 34, 0.2);
+  }
+  
+.albumcard-image img:hover {
+    opacity: 0.8;
+  }
