@@ -1,5 +1,56 @@
+body, article, button, h1, h2, h3, h4, h5, h6, footer  {
+	font-family: "Courier New", monospace;	}
+
+/* Navigation bar */
+
+.ulnav {
+    overflow: hidden;
+    background-color: black;
+      margin-bottom: 0 !important;
+  border: 0 !important;
+  }
+  
+  li {
+    float: left;
+      list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a  {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Nav bar hovers*/  
+  
+  .home:hover { 
+      background-color: white;
+      color: #102542ff
+  }
+  
+  .blognav:hover {
+    background-color: #FAC60E; /* was #111 */ 
+  }
+  
+  .TBCnav:hover {
+    background-color: #8aa29eff; /* was #111 */ 
+  }
+  
+  .moosicknav:hover {
+    background-color: #824c71ff; /* was #111 */ 
+  }
+  
+  
+  
+
+
+
 body { 
-    background-color: whitesmoke; 
+    
     margin: 0
 
 }
@@ -10,15 +61,22 @@ img {
      
 }
 
+header {
+    color: white;
+    background-color: black;
+    margin-top: 0;
+    padding:10px; 
+}
+
 .container { 
     display: grid;
     place-items: center;
+    background-color: whitesmoke; 
 }
 
 .albumgrid { 
     display: grid; 
     gap:2rem;
-    align-tracks: center;
     grid-auto-flow: column;
     grid-auto-columns: 22%;
     overflow-x: auto;
@@ -38,4 +96,50 @@ img {
   
 .albumcard-image img:hover {
     opacity: 0.8;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* footer */ 
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+      margin-top:20px; 
+  }
+      
+  .footerlist {
+    display: inline-block;
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  
+  }
+  
+  .footer-item:hover {
+        text-decoration: underline;
+  }
+  
+      
+  
+  .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
   }
