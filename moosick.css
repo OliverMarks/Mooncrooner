@@ -123,6 +123,12 @@ header {
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
   }
+
+  .modalimg
+  {
+    width: 150px;
+    height: 150px; 
+  }
   
   /* The Close Button */
   .close {
@@ -139,7 +145,7 @@ header {
     cursor: pointer;
   }
 
-  
+
 
 
 
