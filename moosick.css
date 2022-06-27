@@ -90,13 +90,25 @@ header {
 
 }
 
+.shade {
+    filter:brightness(30%); 
+  }
+
+.albumbutton { 
+    padding: 0;
+    border: none; 
+    cursor: pointer; 
+}
+
 .albumcard:hover {
+    
     transform: scale(1.03);
     box-shadow: 0 10px 30px -5px rgba(12, 12, 12, 0.2);
   }
   
 .albumcard-image img:hover {
     opacity: 0.8;
+    
   }
 
 
