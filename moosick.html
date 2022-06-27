@@ -46,12 +46,13 @@
 <div class="albumgrid">
     <div class="albumcard" id="pinkertonCard">
         <button id="myBtn" class="albumbutton">
-    <img src="imgs/Pinkerton.jpg">
-    
-    <audio id="pinkertonAudio" preload="auto">
-        <source src="audio/Some call me  Tim.mp3">
-        <source src="audio/Some call me  Tim.ogg">
-    </audio>
+            <img src="imgs/Pinkerton.jpg" onMouseOver="document.getElementById('pinkertonaudio').play()" 
+            onMouseOut="document.getElementById('pinkertonaudio').pause()" >
+           
+           <audio id="pinkertonaudio"
+               src="audio/Some call me  Tim.mp3"
+               src="audio/Some call me  Tim.ogg">
+           </audio>
     
 </button>
 
@@ -190,12 +191,17 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
 
 <!--audio on hover script-->
 <script>
-   var audio = $("#pinkertonAudio")[0];
-$("#pinkertonCard")
-	.mouseenter(function() {
-		audio.play();
-	});
-</script>
+    function PlaySound(soundobj) {
+        var thissound=document.getElementById(soundobj);
+        thissound.play();
+    }
+    
+    function StopSound(soundobj) {
+        var thissound=document.getElementById(soundobj);
+        thissound.pause();
+        thissound.currentTime = 0;
+    }
+    </script>
 
 
 </body> 
