@@ -6,7 +6,7 @@
 		<!-- Using moosick Stylesheet -->
 		<link rel="stylesheet" 			href="moosick.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     
     
     
@@ -44,10 +44,18 @@
 
     <div class="container">
 <div class="albumgrid">
-    <div class="albumcard">
+    <div class="albumcard" id="pinkertonCard">
         <button id="myBtn" class="albumbutton">
     <img src="imgs/Pinkerton.jpg">
-    </button>
+    
+    <audio id="pinkertonAudio" preload="auto">
+        <source src="audio/Some call me  Tim.mp3">
+        <source src="audio/Some call me  Tim.ogg">
+    </audio>
+    
+</button>
+
+
 
     
 </div>
@@ -180,7 +188,14 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
     }
         </script>
 
-
+<!--audio on hover script-->
+<script>
+   var audio = $("#pinkertonAudio")[0];
+$("#pinkertonCard")
+	.mouseenter(function() {
+		audio.play();
+	});
+</script>
 
 
 </body> 
