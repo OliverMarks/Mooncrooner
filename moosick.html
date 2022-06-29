@@ -84,9 +84,10 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
         
 <div class="albumgrid">
     <div class="albumcard" id="pinkertonCard">
+        <button id="myBtn" class="albumbutton">
         <div class="soundwave"> <img src="imgs/soundtransparent.gif" alt="sound waves" onMouseOver="document.getElementById('pinkertonaudio').play()" 
             onMouseOut="document.getElementById('pinkertonaudio').pause()" > </div>
-        <button id="myBtn" class="albumbutton">
+       
             <img class="albumcover-image" src="imgs/Pinkerton.jpg" onMouseOver="document.getElementById('pinkertonaudio').play()" 
             onMouseOut="document.getElementById('pinkertonaudio').pause()" >
            
@@ -194,13 +195,14 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
 
 // audio on hover script
 
-    function PlaySound(soundobj) {
-        var thissound=document.getElementById(soundobj);
+    function PlaySound(pinkertonaudio) {
+        var thissound=document.getElementById(pinkertonaudio);
         thissound.play();
     }
+    //soundobj
     
-    function StopSound(soundobj) {
-        var thissound=document.getElementById(soundobj);
+    function StopSound(pinkertonaudio) {
+        var thissound=document.getElementById(pinkertonaudio);
         thissound.pause();
         thissound.currentTime = 0;
     }
@@ -216,7 +218,7 @@ const fadeAudio = setInterval(() => {
   if (sound.volume < 0.003) {
     clearInterval(fadeAudio);
   }
-}, 200);
+}, 200); //does this 200 value need to be smaller?
     </script>
 
 
