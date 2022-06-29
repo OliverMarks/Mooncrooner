@@ -50,8 +50,8 @@
             onMouseOut="document.getElementById('pinkertonaudio').pause()" >
            
            <audio id="pinkertonaudio"
-               src="audio/Some call me  Tim.mp3"
-               src="audio/Some call me  Tim.ogg">
+               src="audio/El Scorcho.mp3"
+               src="audio/El Scorcho.ogg">
            </audio>
     
 </button>
@@ -201,6 +201,18 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
         thissound.pause();
         thissound.currentTime = 0;
     }
+
+    const sound = document.getElementById('pinkertonaudio');
+const fadeAudio = setInterval(() => {
+  const fadePoint = sound.duration - 5;
+  if ((sound.currentTime >= fadePoint) && (sound.volume !== 0)) {
+    sound.volume -= 0.1
+  }
+
+  if (sound.volume < 0.003) {
+    clearInterval(fadeAudio);
+  }
+}, 200);
     </script>
 
 

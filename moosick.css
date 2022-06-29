@@ -6,9 +6,9 @@ body, article, button, h1, h2, h3, h4, h5, h6, footer  {
 .ulnav {
     overflow: hidden;
     background-color: black;
-      margin-bottom: 0 !important;
+      margin-bottom: 0; 
       margin-left: 0;
-  border: 0 !important;
+  border: 0; 
   }
   
   li {
@@ -117,7 +117,8 @@ header {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
+    align-self: flex-start;
     left: 0; 
     width: 100%; /* Full width */
     height: 100%; /* Full height */
@@ -129,6 +130,7 @@ header {
   /* Modal Content/Box   this needs to be higher on the page */
   .modal-content {
     background-color: #fefefe;
+    z-index: 5;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
