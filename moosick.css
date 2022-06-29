@@ -6,6 +6,7 @@ body, article, button, h1, h2, h3, h4, h5, h6, footer  {
 .ulnav {
     overflow: hidden;
     background-color: black;
+    margin-top: 0;
       margin-bottom: 0; 
       margin-left: 0;
   border: 0; 
@@ -90,9 +91,29 @@ header {
 
 }
 
+.soundwave {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.albumcard:hover .albumcard-image {
+    opacity: 0.3;
+  }
+  
+  .albumcard:hover .soundwave {
+    opacity: 1;
+  }
+
 .shade {
     filter:brightness(30%); 
   }
+
+
 
 .albumbutton { 
     padding: 0;
