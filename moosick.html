@@ -46,12 +46,13 @@
         
 <div class="albumgrid">
     <div class="albumcard" id="pinkertonCard">
-        <div class="soundwave"><img src="imgs/soundtransparent.gif" alt="sound waves"> </div>
+        <div class="soundwave"> <img src="imgs/soundtransparent.gif" alt="sound waves" onMouseOver="document.getElementById('pinkertonaudio').play()" 
+            onMouseOut="document.getElementById('pinkertonaudio').pause()" > </div>
         <button id="myBtn" class="albumbutton">
             <img class="albumcover-image" src="imgs/Pinkerton.jpg" onMouseOver="document.getElementById('pinkertonaudio').play()" 
             onMouseOut="document.getElementById('pinkertonaudio').pause()" >
            
-           <audio id="pinkertonaudio"
+           <audio preload="auto" id="pinkertonaudio"
                src="audio/El Scorcho.mp3"
                src="audio/El Scorcho.ogg">
            </audio>

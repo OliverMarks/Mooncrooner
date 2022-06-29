@@ -137,7 +137,7 @@ header {
   /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    position: absolute; /* Stay in place - was fixed */
     z-index: 2; /* Sit on top */
     align-self: flex-start;
     left: 0; 
