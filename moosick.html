@@ -84,7 +84,7 @@ We continued drinking for an hour or so before heading back to the hostel; drunk
 
 You’re probably wondering at this point what this has to do with Weezer’s sophomore album Pinkerton and that’s a fair question to ask. In all honesty it’s just one of my better anecdotes but there is a tenuous link. Pinkerton was one of those albums John and I both adored. We were stereotypical Weezer fan boys i.e we loved Weezer but what we <em>really</em> meant by that was that we loved their first two albums. I’d enjoyed these albums having illegally downloaded them in my early teens which, although cost effective, often leaves you devoid of the context in which they sit in an artists discography (particularly if you don’t pay attention to release dates). For this reason up until this point I had always assumed Pinkerton was Weezer’s debut album. It certainly feels like a debut album, gone are the clean production values of the blue album, the band opting instead to self produce, lending it’s sound a spoon full of rough and ready garage band (albeit a rather well equipped garage band), it’s darker, grittier and full of all the things you would expect to be cleaned up once a band is paired up with a producer with an ear to the charts. <br><br>
 
-Despite the themes and lyrics, of which we’ll come to later, Pinkerton has the feel of a band having fun. Guitars are loose and thrashed, solos have impact and bass lines thud life into the rhythm section, The whoops, shouts and hollers left into the mix and scattered throughout the album add to this and make you want to get onboard for the ride. Most importantly it feels real and genuine. There’s a sincerity here that later Weezer albums failed to recreate and instead landed fully in the cringe bucket (yes I’m looking at you Can’t Stop Partying ft Lil Wayne). <em>El Scorchio</em> and its slack-anthemic chorus is a perfect example of this. <br><br>
+Despite the themes and lyrics, of which we’ll come to later, Pinkerton has the feel of a band having fun. Guitars are loose and thrashed, solos have impact and bass lines thud life into the rhythm section, The whoops, shouts and hollers left into the mix and scattered throughout the album add to this and make you want to get onboard for the ride. Most importantly it feels real and genuine. There’s a sincerity here that later Weezer albums failed to recreate and instead landed fully in the cringe bucket (yes I’m looking at you Can’t Stop Partying ft Lil Wayne). <em>El Scorcho</em> and its slack-anthemic chorus is a perfect example of this. <br><br>
 
 If the Blue album had come after this you could have pointed to middle tracks <em>No other one</em> and <em>Why bother</em> as being a sign of things to come, instead they’re a link to the past and a thread from the blue album and the sound the band established in their debut. 
 
@@ -190,10 +190,10 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
         modal.style.display = "none";
       }
     }
-        </script>
+        
 
-<!--audio on hover script-->
-<script>
+// audio on hover script
+
     function PlaySound(soundobj) {
         var thissound=document.getElementById(soundobj);
         thissound.play();
@@ -204,6 +204,7 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
         thissound.pause();
         thissound.currentTime = 0;
     }
+ //audio should fade in and out, not sure if working
 
     const sound = document.getElementById(pinkertonaudio);
 const fadeAudio = setInterval(() => {
