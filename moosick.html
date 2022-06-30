@@ -85,11 +85,10 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
 <div class="albumgrid">
     <div class="albumcard" id="pinkertonCard">
         <button id="myBtn" class="albumbutton">
-        <div class="soundwave"> <img src="imgs/soundtransparent.gif" alt="sound waves" onMouseOver="document.getElementById('pinkertonaudio').play()" 
+        <div class="soundwave"> <img src="imgs/soundtransparent.gif" alt="sound waves" onMouseOver="document.getElementById('pinkertonaudio').play()"
             onMouseOut="document.getElementById('pinkertonaudio').pause()" > </div>
        
-            <img class="albumcover-image" src="imgs/Pinkerton.jpg" onMouseOver="document.getElementById('pinkertonaudio').play()" 
-            onMouseOut="document.getElementById('pinkertonaudio').pause()" >
+            <img class="albumcover-image" src="imgs/Pinkerton.jpg">
            
            <audio preload="auto" id="pinkertonaudio"
                src="audio/El Scorcho.mp3"
@@ -191,7 +190,7 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
         modal.style.display = "none";
       }
     }
-        
+
 
 // audio on hover script
 
@@ -200,7 +199,7 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
         thissound.play();
     }
     //soundobj
-    
+
     function StopSound(pinkertonaudio) {
         var thissound=document.getElementById(pinkertonaudio);
         thissound.pause();
@@ -208,7 +207,7 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
     }
  //audio should fade in and out, not sure if working
 
-    const sound = document.getElementById(pinkertonaudio);
+    const sound = document.getElementById('pinkertonaudio');
 const fadeAudio = setInterval(() => {
   const fadePoint = sound.duration - 5;
   if ((sound.currentTime >= fadePoint) && (sound.volume !== 0)) {
