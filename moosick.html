@@ -193,22 +193,11 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
     }
         
 
-// audio on hover script
 
-    function PlaySound(pinkertonaudio) {
-        var thissound=document.getElementById(pinkertonaudio);
-        thissound.play();
-    }
-    //soundobj
     
-    function StopSound(pinkertonaudio) {
-        var thissound=document.getElementById(pinkertonaudio);
-        thissound.pause();
-        thissound.currentTime = 0;
-    }
  //audio should fade in and out, not sure if working
 
-    const sound = document.getElementById(pinkertonaudio);
+    const sound = document.getElementById('pinkertonaudio');
 const fadeAudio = setInterval(() => {
   const fadePoint = sound.duration - 5;
   if ((sound.currentTime >= fadePoint) && (sound.volume !== 0)) {

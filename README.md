@@ -16,7 +16,6 @@ page indexes
 
 
 moosick
-- is the gif prior to hover appearing elsewhere on the page? audio can be triggered when hovering elsewhere on the page, think this would be removed if i took off the audio on hover script of it but could i make the image smaller when the album isnt hovered? 
 - audio only appearing after a click
 
 contact page
