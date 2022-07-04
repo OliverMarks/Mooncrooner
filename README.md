@@ -6,7 +6,7 @@ issue/to do log
 
 General 
 - mobile compatability 
-- create 404 page 
+
 
 Index
 - gap between coloumns on lapscreen looks off
