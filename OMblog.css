@@ -42,19 +42,26 @@ li a  {
 
 .home:hover { 
 	background-color: white;
-	color: #102542ff
+	color: #102542ff;
+	cursor: pointer;
+
 }
 
 .blognav:hover {
-  background-color: #FAC60E; /* was #111 */ 
+  background-color: #FAC60E;
+  cursor: pointer;
 }
 
 .Sketchingsnav:hover {
-  background-color: #8aa29eff; /* was #111 */ 
+  background-color: #8aa29eff; 
+  cursor: pointer;
+   
 }
 
 .moosicknav:hover {
-  background-color: #824c71ff; /* was #111 */ 
+  background-color: #824c71ff; 
+  cursor: pointer;
+
 }
 
 
@@ -183,6 +190,9 @@ h3, h5{
   background-color: #FAC60E;
   color: white;
 	border: 2px solid #FAC60E;
+	cursor: pointer;
+
+	
 }
 
 
@@ -192,7 +202,7 @@ h3, h5{
   color: black;
   border: 2px solid #555555;
   width: 120px; 
-
+	cursor: pointer;
 	
 }
 
@@ -200,6 +210,8 @@ h3, h5{
   background-color: #8aa29eff;
   color: white;
 	border: 2px solid #8aa29eff;
+	cursor: pointer;
+
 }
 
 .Sketchingsbutton {
@@ -207,6 +219,8 @@ h3, h5{
   	color: black;
   border: 2px solid #555555;
 	  width: 120px; 
+	  cursor: pointer;
+
 
 	
 }
@@ -215,6 +229,8 @@ h3, h5{
   background-color: #824c71ff;
   color: white;
 	border: 2px solid #824c71ff;
+	cursor: pointer;
+
 }
 
 
