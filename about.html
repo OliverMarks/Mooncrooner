@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<!-- Using OM Blog Stylesheet -->
+		<link rel="stylesheet" 			href="about.css">
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+			<title>About Mooncrooner</title>
+	    <link rel="shortcut icon" href="/favicon.ico">
+
+	
+	<body> 
+		
+	
+	<!-- Navigation bar -->
+		<div class="nav">
+  		<ul class="ulnav">
+  <li><a class="home" href="index.html">Home</a></li>
+  <li><a class=blognav href="blogindex.html">Blog</a></li>
+  <li><a class=Sketchingsnav href="sketchingsindex.html">Sketchings</a></li>
+  <li><a class=moosicknav href="moosick.html">Moosick</a></li>
+</ul>
+		</div>
+	
+	<!-- Header --> 
+	<header>
+		<h1><b>About</b></h1>    
+		<p>But what's it all about?</p> 
+
+	</header> 
+		<main>
+            <div class="about">
+                <div class="about-img">
+                </div>
+                <div class="btn-container">
+                    <button class="tab-btn" data-id="tab1">About</button>
+                    <button class="tab-btn" data-id="tab2">Vision Statement</button>
+                    <button class="tab-btn" data-id="tab3">History</button>
+                    
+
+                </div>
+
+
+                <div class="about-content">
+
+                <div class="content" id="tab1">
+                    <h3>About</h3>
+                    <img class="content-img" src="imgs/barry.jpeg">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                </div>
+
+                <div class="content" id="tab2">
+                    <h3>Vision Statement</h3>
+                    <p>This is content for tab 2</p>
+                </div>
+
+                <div class="content" id="tab3">
+                    <h3>History</h3>
+                    <p>This is content for tab 3</p>
+                </div>
+                
+            
+            </div>
+
+
+
+        </main>
+<script>
+    const about = document.querySelector(".about");
+const btns = document.querySelectorAll(".tab-btn");
+const articles = document.querySelectorAll(".content");
+about.addEventListener("click", function (e) {
+  const id = e.target.dataset.id;
+  if (id) {
+    // remove selected from other buttons
+    btns.forEach(function (btn) {
+      btn.classList.remove("active");
+    });
+    e.target.classList.add("active");
+    // hide other articles
+    articles.forEach(function (article) {
+      article.classList.remove("active");
+    });
+    const element = document.getElementById(id);
+    element.classList.add("active");
+  }
+});
+</script>
+		
+		</body>
+			
+			<footer>
+            <ul class="footerlist">
+                <li class="footer-item"><a href="index.html">Home</a></li>
+                <li class="footer-item"><a href="about.html">About</a></li>
+                <li class="footer-item"><a href="404.html">Contact</a></li>
+                <li class="footer-item"><a href="404.html">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Oily Thighs © 2022</p>
+        </footer>
+			
+			</html> 
