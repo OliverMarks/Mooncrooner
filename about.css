@@ -116,8 +116,18 @@ header {
   }
 
   .about-content {
-    margin-left: 5%;
+    display: grid;
+    grid-template-columns:  1fr minmax(250px, 25%);
+   
   }
+  
+   .content-img {
+    grid-column: 2;
+    grid-row: 1;
+   }
+
+ 
+  
 
   .btn-container {
     display: grid;
@@ -150,6 +160,8 @@ header {
   .content {
     display: none;
   }
+  
+
   .tab-btn.active {
     background: #102542ff;
     color: white;
@@ -157,6 +169,8 @@ header {
   .content.active {
     display: block;
   }
+
+ 
 
 
   .content-img {
