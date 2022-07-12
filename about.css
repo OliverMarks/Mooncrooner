@@ -115,15 +115,20 @@ header {
     margin-right: 5%;
   }
 
-  .about-content {
+  .content.active {
     display: grid;
     grid-template-columns:  1fr minmax(250px, 25%);
-   
+    grid-template-rows: auto
   }
   
-   .content-img {
+  .text {
+    grid-column: 1;
+    
+  }
+
+   .imgs {
     grid-column: 2;
-    grid-row: 1;
+    
    }
 
  
@@ -166,16 +171,31 @@ header {
     background: #102542ff;
     color: white;
   }
+
   .content.active {
-    display: block;
+    display: grid;
+    grid-template-columns:  1fr minmax(250px, 25%);
+    grid-template-rows: auto
+    
+    
+  }
+  
+  .text {
+    grid-column: 1;
+    margin-left: 5%;
+    
+    
   }
 
- 
+   .imgs {
+    grid-column: 2;
+    margin-left: 5%;
+    /*add in uniform sizing css*/ 
+    
+   }
 
 
-  .content-img {
-    float: right;
-  }
+  
 
 
 
