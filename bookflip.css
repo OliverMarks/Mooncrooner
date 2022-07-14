@@ -2,9 +2,10 @@ body, article, button, h1, h2, h3, h4, h5, h6, footer  {
 	font-family: "Courier New", monospace;	}
 
 .ulnav {
-    overflow: hidden;
+   
 	width: 100%;
     background-color: #102542ff;
+	margin-top: 0;
       margin-bottom: 0 !important;
   border: 0 !important;
   }
@@ -67,6 +68,7 @@ body, article, button, h1, h2, h3, h4, h5, h6, footer  {
       padding: 50px;
       background-color: #102542ff;
       color: white;  
+	  width: 100%;
 
       
   } 
