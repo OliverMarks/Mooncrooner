@@ -29,7 +29,7 @@
 
     <!-- Modal content -->
     <div class="modal-content">
-      <span class="close">&times;</span>
+      <span class="pinkClose">&times;</span>
       <h1 class="modalh1">Pinkerton (1996) - Weezer</h1>
       
       <p>
@@ -70,7 +70,7 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
 
     <!-- Modal content -->
     <div class="modal-content">
-      <span class="close">&times;</span>
+      <span class="antClose">&times;</span>
       <h1 class="modalh1">Ants from Up There (2022) - Black Country, New Road</h1>
       </div>
       </div>
@@ -195,7 +195,7 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
     var pinkBtn = document.getElementById("pinkBtn");
     
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementsByClassName("pinkClose")[0];
     
     // When the user clicks the button, open the modal 
     pinkBtn.onclick = function() {
@@ -207,7 +207,7 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
       pinkModal.style.display = "none";
     }
     
-    // When the user clicks anywhere outside of the modal, close it
+    // When the user clicks anywhere outside of the modal, close it - this currently not functioning 
     window.onclick = function(event) {
       if (event.target == pinkModal) {
         pinkModal.style.display = "none";
@@ -222,7 +222,7 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
     var antBtn = document.getElementById("antBtn");
     
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementsByClassName("antClose")[0];
     
     // When the user clicks the button, open the modal 
     antBtn.onclick = function() {
