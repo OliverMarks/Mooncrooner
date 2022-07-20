@@ -25,7 +25,7 @@
 <body>
 
     <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="pinkModal" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -66,12 +66,12 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
 
 
    <!-- The Modal -->
-   <div id="myModal" class="modal">
+   <div id="antModal" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h1 class="modalh1">Pinkerton (1996) - Weezer</h1>
+      <h1 class="modalh1">Ants from Up There (2022) - Black Country, New Road</h1>
       </div>
       </div>
 
@@ -101,7 +101,7 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
         
 <div class="albumgrid">
     <div class="albumcard" id="pinkertonCard">
-        <button id="myBtn" class="albumbutton">
+        <button id="pinkBtn" class="albumbutton">
         <div class="soundwave"> <img src="imgs/soundtransparent.gif" alt="sound waves" onMouseOver="document.getElementById('pinkertonaudio').play()" 
             onMouseOut="document.getElementById('pinkertonaudio').pause()" > </div>
        
@@ -120,7 +120,7 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
 
 <!--Ants Card-->
   <div class="albumcard" id="antsCard">
-      <button id="myBtn" class="albumbutton">
+      <button id="antBtn" class="albumbutton">
       <div class="soundwave"> <img src="imgs/soundtransparent.gif" alt="sound waves" onMouseOver="document.getElementById('antsAudio').play()" 
           onMouseOut="document.getElementById('antsAudio').pause()" > </div>
      
@@ -187,33 +187,60 @@ It’s easy to ‘what if’ a world where Rivers hadn’t felt the shame of thi
 
 
 <script>
+  //Pinkerton Modal 
     // Get the modal
-    var modal = document.getElementById("myModal");
+    var pinkModal = document.getElementById("pinkModal");
     
     // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+    var pinkBtn = document.getElementById("pinkBtn");
     
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
     
     // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-      modal.style.display = "block";
+    pinkBtn.onclick = function() {
+      pinkModal.style.display = "block";
     }
     
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
-      modal.style.display = "none";
+      pinkModal.style.display = "none";
     }
     
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
+      if (event.target == pinkModal) {
+        pinkModal.style.display = "none";
       }
     }
         
-
+    //Ant Modal 
+    // Get the modal
+    var antModal = document.getElementById("antModal");
+    
+    // Get the button that opens the modal
+    var antBtn = document.getElementById("antBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    antBtn.onclick = function() {
+      antModal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      antModal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == antModal) {
+        antModal.style.display = "none";
+      }
+    }
+        
 
     
  //audio should fade in and out, not sure if working
