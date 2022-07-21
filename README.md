@@ -16,7 +16,7 @@ page indexes
 
 
 moosick
-- audio only appearing after a click
+- close on the modals not working 
 
 contact page
 - create
