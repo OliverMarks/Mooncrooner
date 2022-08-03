@@ -111,10 +111,10 @@ header {
     
 }
 
-.commentCard  {
+.commentCard1  {
     position: relative;
     left: 950px;
-    bottom: 600px;
+    bottom: 1800px;
     border-style: solid;
     border-radius: 3%;
     padding: 10px; 
@@ -122,15 +122,96 @@ header {
 	border-width: medium;
     font-size: 12px; 
     height: 100px;
-    max-width: 250px;
+    width: 400px;
     max-height:fit-content;
     box-shadow: 0 10px 30px -5px rgba(12, 12, 12, 0.5);
     background-color: white;
 }
 
+.commentCard2  {
+  position: relative;
+  left: 724px;
+  bottom: 1650px;
+  border-style: solid;
+  border-radius: 3%;
+  padding: 10px; 
+border-style: solid; 
+border-width: medium;
+  font-size: 12px; 
+  height: 100px;
+  width: 400px;
+  max-height:fit-content;
+  box-shadow: 0 10px 30px -5px rgba(12, 12, 12, 0.5);
+  background-color: white;
+}
 
+.commentCard3  {
+  position: relative;
+  left: 500px;
+  bottom: 1400px;
+  border-style: solid;
+  border-radius: 3%;
+  padding: 10px; 
+border-style: solid; 
+border-width: medium;
+  font-size: 12px; 
+  height: 100px;
+  width: 400px;
+  max-height:fit-content;
+  box-shadow: 0 10px 30px -5px rgba(12, 12, 12, 0.5);
+  background-color: white;
+}
 
+.commentCard4  {
+  position: relative;
+  left: 100px;
+  bottom: 800px;
+  border-style: solid;
+  border-radius: 3%;
+  padding: 10px; 
+border-style: solid; 
+border-width: medium;
+  font-size: 12px; 
+  height: 100px;
+  width: 400px;
+  max-height:fit-content;
+  box-shadow: 0 10px 30px -5px rgba(12, 12, 12, 0.5);
+  background-color: white;
+}
 
+.commentCard5  {
+  position: relative;
+  left: -185px;
+  bottom: 550px;
+  border-style: solid;
+  border-radius: 3%;
+  padding: 10px; 
+border-style: solid; 
+border-width: medium;
+  font-size: 12px; 
+  height: 100px;
+  width: 400px;
+  max-height:fit-content;
+  box-shadow: 0 10px 30px -5px rgba(12, 12, 12, 0.5);
+  background-color: white;
+}
+
+.commentCard6  {
+  position: relative;
+  left: -560px;
+  bottom: 250px;
+  border-style: solid;
+  border-radius: 3%;
+  padding: 10px; 
+border-style: solid; 
+border-width: medium;
+  font-size: 12px; 
+  height: 100px;
+  width: 400px;
+  max-height:fit-content;
+  box-shadow: 0 10px 30px -5px rgba(12, 12, 12, 0.5);
+  background-color: white;
+}
 .commentPic { 
     float: left;
     height: 40px;
@@ -237,6 +318,7 @@ h3, h5{
 
 
 
+/* highlighted text */ 
 
 
 
