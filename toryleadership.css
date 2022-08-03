@@ -121,7 +121,7 @@ header {
 	border-style: solid; 
 	border-width: medium;
     font-size: 12px; 
-    height: 100px;
+    height: 80px;
     width: 400px;
     max-height:fit-content;
     box-shadow: 0 10px 30px -5px rgba(12, 12, 12, 0.5);
@@ -130,7 +130,7 @@ header {
 
 .commentCard2  {
   position: relative;
-  left: 724px;
+  left: 570px;
   bottom: 1650px;
   border-style: solid;
   border-radius: 3%;
@@ -138,7 +138,7 @@ header {
 border-style: solid; 
 border-width: medium;
   font-size: 12px; 
-  height: 100px;
+  height: 70px;
   width: 400px;
   max-height:fit-content;
   box-shadow: 0 10px 30px -5px rgba(12, 12, 12, 0.5);
@@ -147,7 +147,7 @@ border-width: medium;
 
 .commentCard3  {
   position: relative;
-  left: 500px;
+  left: 185px;
   bottom: 1400px;
   border-style: solid;
   border-radius: 3%;
@@ -155,7 +155,7 @@ border-width: medium;
 border-style: solid; 
 border-width: medium;
   font-size: 12px; 
-  height: 100px;
+  height: 70px;
   width: 400px;
   max-height:fit-content;
   box-shadow: 0 10px 30px -5px rgba(12, 12, 12, 0.5);
@@ -164,7 +164,7 @@ border-width: medium;
 
 .commentCard4  {
   position: relative;
-  left: 100px;
+  left: -185px;
   bottom: 800px;
   border-style: solid;
   border-radius: 3%;
@@ -172,7 +172,7 @@ border-width: medium;
 border-style: solid; 
 border-width: medium;
   font-size: 12px; 
-  height: 100px;
+  height: 80px;
   width: 400px;
   max-height:fit-content;
   box-shadow: 0 10px 30px -5px rgba(12, 12, 12, 0.5);
@@ -181,7 +181,7 @@ border-width: medium;
 
 .commentCard5  {
   position: relative;
-  left: -185px;
+  left: -510px;
   bottom: 550px;
   border-style: solid;
   border-radius: 3%;
@@ -198,7 +198,7 @@ border-width: medium;
 
 .commentCard6  {
   position: relative;
-  left: -560px;
+  left: -925px;
   bottom: 250px;
   border-style: solid;
   border-radius: 3%;
@@ -206,7 +206,7 @@ border-width: medium;
 border-style: solid; 
 border-width: medium;
   font-size: 12px; 
-  height: 100px;
+  height: 80px;
   width: 400px;
   max-height:fit-content;
   box-shadow: 0 10px 30px -5px rgba(12, 12, 12, 0.5);
@@ -328,6 +328,7 @@ h3, h5{
 /* footer */ 
 
 footer {
+ 
   background-color: #102542ff;
   text-align: center;
   padding: 50px;
