@@ -114,7 +114,7 @@ header {
 .commentCard1  {
     position: relative;
     left: 950px;
-    bottom: 1800px;
+    bottom: 1775px;
     border-style: solid;
     border-radius: 3%;
     padding: 10px; 
@@ -130,7 +130,7 @@ header {
 
 .commentCard2  {
   position: relative;
-  left: 570px;
+  left: -143px;
   bottom: 1620px;
   border-style: solid;
   border-radius: 3%;
@@ -147,8 +147,8 @@ border-width: medium;
 
 .commentCard3  {
   position: relative;
-  left: 185px;
-  bottom: 1430px;
+  left: 950px;
+  bottom: 1520px;
   border-style: solid;
   border-radius: 3%;
   padding: 10px; 
@@ -164,8 +164,8 @@ border-width: medium;
 
 .commentCard4  {
   position: relative;
-  left: -185px;
-  bottom: 800px;
+  left: -140px;
+  bottom: 900px;
   border-style: solid;
   border-radius: 3%;
   padding: 10px; 
@@ -181,8 +181,8 @@ border-width: medium;
 
 .commentCard5  {
   position: relative;
-  left: -510px;
-  bottom: 550px;
+  left: 960px;
+  bottom: 750px;
   border-style: solid;
   border-radius: 3%;
   padding: 10px; 
@@ -198,8 +198,8 @@ border-width: medium;
 
 .commentCard6  {
   position: relative;
-  left: -925px;
-  bottom: 250px;
+  left: -130px;
+  bottom: 450px;
   border-style: solid;
   border-radius: 3%;
   padding: 10px; 
@@ -348,6 +348,7 @@ footer {
 
 .footer-item:hover {
 	  text-decoration: underline;
+    
 }
 
 	
