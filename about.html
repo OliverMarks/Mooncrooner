@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<!-- Using OM Blog Stylesheet -->
+		<link rel="stylesheet" 			href="about.css">
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+			<title>About Mooncrooner</title>
+			<link type="image/png" sizes="32x32" rel="icon" href="imgs/icons8-moon-32.png">
+
+	
+	<body> 
+		
+	
+	<!-- Navigation bar -->
+		<div class="nav">
+  		<ul class="ulnav">
+  <li><a class="home" href="index.html">Home</a></li>
+  <li><a class=blognav href="blogindex.html">Blog</a></li>
+  <li><a class=Sketchingsnav href="sketchingsindex.html">Sketchings</a></li>
+  <li><a class=moosicknav href="moosick.html">Moosick</a></li>
+</ul>
+		</div>
+	
+	<!-- Header --> 
+	<header>
+		<h1><b>About</b></h1>    
+		<p>Who am we?</p> 
+
+	</header> 
+		<main>
+            <div class="about">
+                <div class="about-img">
+                </div>
+                <div class="btn-container">
+                    <button class="tab-btn" data-id="tab1">About</button>
+                    <button class="tab-btn" data-id="tab2">Leadership</button>
+                    <button class="tab-btn" data-id="tab3">History</button>
+                    
+
+                </div>
+
+
+                <div class="about-content">
+
+                <div class="content" id="tab1">
+                  
+                  <div class="text">
+                    <h3>About</h3>
+                    <p><b>Vision Statement</b>
+                      <br> <br><i>“To boldly deliver content to the masses with the gusto of a reluctant best man”</i> 
+                      <br><br>
+                      Mooncrooner is unfortunate, unconscious, unaware, unwilling, unfamiliar and uncomfortable. We strive to bring the unnecessary to the unwilling; break barriers that never existed and create boundaries that are unneeded. Through unsuitable needs we create uncertainty to the unspecified underclass. 
+                      
+                    </div>
+
+                    <div class="imgs">
+                      <img src="">
+                    </div>
+                      
+                    </div>
+
+                
+
+                <div class="content" id="tab2">
+                  <div class="text">
+                    <h3>Leadership</h3>
+                    <p><b>Harry Bawkins* - Editor in Chief</b> 
+                      <br><br>
+                      After Graduating from East Cumbria Polytechnic Harry Bawkins worked for a number of publications including <i>Schlapstone Germany, Man Touch Online, The Ladies of Saigon Review and Rude Boi Monthly</i>. With over 25years experience in the industry and 5years as Deputy Editor at [redacted], Harry is well placed to drive forward the progress of Mooncrooner at a glacial pace. 
+                      <br><br>
+                      
+                      
+                      *<i><b>It should be noted that due to the terms of the separation agreement technically Mr Claningham retains the position of Editor in Chief. It should be made clear that Mr Claningham has no editorial power or influence as to the direction of the company. </i></b>
+                      </p>
+                  </div>
+                  <div class="imgs">
+                    <img src="imgs/barry.jpeg">
+                  </div>
+                </div>
+
+                <div class="content" id="tab3">
+                  <div class="text">
+                    <h3>History</h3>
+                    <p>Established in principle in 2019 by court order following <i>Claningham v Bawkins*</i> and in actuality from May 2022. Mooncrooner has a storied reputation for delivering subpar content on a range of news, culture and popular sentiment. We are known for our willingness to bend to public opinion and unashamedly serve the needs of the highest bidder. 
+                      <br><br>
+                      *<i><b>Since the court case, and in accordance with the terms agreed, the legal department is keen to emphasise that the Mooncrooner organisation now has no relation to Croonmooner in any way, shape or form. </b></i>
+                      </p>
+                    </div>
+                    <div class="imgs">
+                      <img class="historyimgs" src="imgs/mchistory.jpg">
+                    </div>
+                    </div>
+                </div>
+                
+            
+            </div>
+
+
+
+        </main>
+<script>
+    const about = document.querySelector(".about");
+const btns = document.querySelectorAll(".tab-btn");
+const articles = document.querySelectorAll(".content");
+about.addEventListener("click", function (e) {
+  const id = e.target.dataset.id;
+  if (id) {
+    // remove selected from other buttons
+    btns.forEach(function (btn) {
+      btn.classList.remove("active");
+    });
+    e.target.classList.add("active");
+    // hide other articles
+    articles.forEach(function (article) {
+      article.classList.remove("active");
+    });
+    const element = document.getElementById(id);
+    element.classList.add("active");
+  }
+});
+</script>
+		
+		</body>
+			
+			<footer>
+            <ul class="footerlist">
+                <li class="footer-item"><a href="index.html">Home</a></li>
+                <li class="footer-item"><a href="about.html">About</a></li>
+                <li class="footer-item"><a href="contact.html">Contact</a></li>
+                <li class="footer-item"><a href="404.html">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Oily Thighs © 2022</p>
+        </footer>
+			
+			</html> 

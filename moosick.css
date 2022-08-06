@@ -31,19 +31,27 @@ body, article, button, h1, h2, h3, h4, h5, h6, footer  {
   
   .home:hover { 
       background-color: white;
-      color: #102542ff
+      color: #102542ff;
+      cursor: pointer;
+
   }
   
   .blognav:hover {
-    background-color: #FAC60E; /* was #111 */ 
+    background-color: #FAC60E; 
+    cursor: pointer;
+    /* was #111 */ 
   }
   
-  .TBCnav:hover {
-    background-color: #8aa29eff; /* was #111 */ 
+  .Sketchingsnav:hover {
+    background-color: #8aa29eff;
+    cursor: pointer;
+    /* was #111 */ 
   }
   
   .moosicknav:hover {
-    background-color: #824c71ff; /* was #111 */ 
+    background-color: #824c71ff;
+    cursor: pointer;
+    /* was #111 */ 
   }
   
   
@@ -92,6 +100,7 @@ header {
 }
 
 .soundwave {
+    display: none;
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -178,15 +187,17 @@ header {
   }
   
   /* The Close Button */
-  .close {
+  .pinkClose, .antClose  {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
+
+
   
-  .close:hover,
-  .close:focus {
+  .pinkClose, .antClose:hover,
+  .pinkClose, .antClose:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
