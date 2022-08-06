@@ -243,6 +243,23 @@ h3, h5{
 	color: white; 	
 }
 
+.blogUp { 
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.sketchingsUp {
+	padding-right: 10px; 
+	padding-left: 10px;
+	margin-top: 30%;  
+	
+}
+
+.moosickUp { 
+	padding: 10px; 
+	margin-top: 10%; 
+	
+}
 
 
 
@@ -254,7 +271,7 @@ h3, h5{
 
 .liru {
 	color:black; 
-	background-color: white;
+	background-color:;
 }
 
 .liru:hover {
