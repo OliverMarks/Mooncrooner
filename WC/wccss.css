@@ -1,6 +1,7 @@
 @import url(https://db.onlinewebfonts.com/c/a0cb693c715aaf804e67963c4d0d4d90?family=ModeSeven);
 
-
+@font-face {font-family: "ModeSeven"; src: url("//db.onlinewebfonts.com/t/a0cb693c715aaf804e67963c4d0d4d90.eot"), 
+  url("//db.onlinewebfonts.com/t/a0cb693c715aaf804e67963c4d0d4d90.ttf") format("truetype"); }
 
 span, body, article, button, h1, h2, h3, h4, h5, h6, footer, li, td, th  {
     font-family: "ModeSeven"
