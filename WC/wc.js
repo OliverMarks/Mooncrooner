@@ -7,5 +7,10 @@ function refreshTime() {
     const dateString = new Date().toLocaleString();
     const formattedString = dateString.replace(", ", " - ");
     timeDisplay.textContent = formattedString;
-  }
-    setInterval(refreshTime, 1000);
+}
+    setInterval(refreshTime, 1000); 
+
+
+
+
+  

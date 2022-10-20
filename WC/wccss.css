@@ -13,6 +13,26 @@ html {
     max-width: 1400px;
 }
 
+/* count */ 
+@property --num {
+  syntax: "<integer>";
+  initial-value: 101;
+  inherits: false;
+}
+
+#count {
+  transition: --num 5s;
+  counter-set: num var(--num);
+ 
+}
+#count::after {
+  content: counter(num);
+}
+#count:hover {
+  --num: 401;
+}
+
+
 /* Link Styling */ 
 
 a:link {
@@ -172,6 +192,18 @@ font-size: 30px;
 
 /* Group Pages CSS */ 
 
+.title{
+
+  display: inline-block
+}
+.flag  {
+      height: 150px;
+      width: 300px; 
+      padding: 2px;
+      padding-bottom: 20px;
+    }
+
+
 .title {
   font-size: 32px;
   border-style: solid;
@@ -190,12 +222,12 @@ font-size: 30px;
 
 .standings {
 grid-column: 2;
-padding-left: 5%;
+
 
 }
 
 .groupTable th {
-  color: rgb(0, 225, 255);
+  color: rgb(47, 255, 47);
 }
 
 .groupTable tr {
@@ -204,7 +236,7 @@ padding-left: 5%;
   white-space: nowrap;
  }
 
- .groupTable tr:nth-child(even) {       /* not sure why this isnt working */ 
+ .groupTable tr:nth-child(even) {      
   color: white;
 }
 
@@ -249,3 +281,163 @@ padding-left: 5%;
   }
 
 
+  /* Knockout bracket */ 
+  .knockout { 
+    max-width: fit-content;
+  }
+
+  .bracketparent {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    place-items: center;
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(0, 225, 255);
+    padding: 5%;
+    
+  }
+
+  .r16-1 { 
+    grid-row: 1;
+    grid-column: 1 / span 3;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    padding: 5%;
+    border-radius: 5%;
+  }
+
+  .r16-2 {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    border-radius: 5%;
+    padding: 5%;
+  }
+
+  .r16-3 {
+    grid-row: 5;
+    grid-column: 1 / span 3;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    border-radius: 5%;
+    padding: 5%;
+
+  }
+
+  .r16-4 {
+    grid-row: 7;
+    grid-column: 1 / span 3;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    border-radius: 5%;
+    padding: 5%;
+  }
+
+
+  .r16-5 {
+    grid-row: 1;
+    grid-column: 14 / span 3;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    border-radius: 5%;
+    padding: 5%;
+  }
+
+  .r16-6 {
+    grid-row: 3;
+    grid-column: 14 / span 3;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    border-radius: 5%;
+    padding: 5%;
+  }
+
+  .r16-7 {
+    grid-row: 5;
+    grid-column: 14 / span 3;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    border-radius: 5%;
+    padding: 5%;
+  }
+
+  .r16-8 {
+    grid-row: 7;
+    grid-column: 14 / span 3;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    border-radius: 5%;
+    padding: 5%;
+  }
+
+  .q1 {
+    grid-column: 3 / span 3;
+    grid-row: 2;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    border-radius: 5%;
+    padding: 5%;
+  }
+
+  .q2 {
+    grid-column: 3 / span 3;
+    grid-row: 6;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    border-radius: 5%;
+    padding: 5%;
+
+  }
+
+  .q3 {
+    grid-column: 10 / span 3;
+    grid-row: 2;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    border-radius: 5%;
+    padding: 5%;
+
+  }
+
+  .q4 {
+    grid-column: 10 / span 3;
+    grid-row: 6;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    border-radius: 5%;
+    padding: 5%;
+
+  }
+
+  .s1 {
+    grid-column: 6 / span 3;
+    grid-row: 4 ;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    border-radius: 5%;
+    padding: 5%;
+
+  }
+
+  .s2 {
+    grid-column: 6 / span 3;
+    grid-row: 4;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    border-radius: 5%;
+    padding: 5%;
+
+  }
+
+  .final {
+    grid-column: 6 / span 3;
+    grid-row: 3;
+    border-style: solid;
+    border-color: rgb(47, 255, 47);
+    border-radius: 5%;
+    margin-right: 115px;
+    padding: 5%;
+    
+
+  }
