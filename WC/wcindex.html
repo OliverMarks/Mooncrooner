@@ -7,13 +7,14 @@
             <!-- Using wc css Stylesheet -->
             <link rel="stylesheet" 			href="wccss.css">
             <link href="https://db.onlinewebfonts.com/c/a0cb693c715aaf804e67963c4d0d4d90?family=ModeSeven" rel="stylesheet" type="text/css"/>
+            <title>Croonfax</title>
             </html>
             <div class="parent">
             <header>
                 <script async src="wc.js"> </script>
                 <ul class="headerul">
                     <li class="lih">Croonfax 1</li> 
-                    <li class="lih" id="count"></li>
+                    <li class="lih">Page Number: <span id="pageNumberValue">101 </span></li>
                     <li class="lih"><span id="time"> </span> </li>
                     </ul>
             
@@ -36,21 +37,21 @@
 
                 <table class="indexContentleft">
                 <tr>
-                    <td><a id="aCount" href="groupa.html"> Group A</a></td>
+                    <td><a (click)="updatePageNumber(201)" href="groupa.html"> Group A</a></td>
                     <td id="tdno">201</td>
                 </tr>
                 
                 <tr>
-                <td><a href="groupb.html">Group B</a></td>
+                <td><a (click)="updatePageNumber(301)" href="groupb.html">Group B</a></td>
                 <td id="tdno">301</td>
                 </tr>
 
                 <tr>
-                <td><a href="groupc.html">Group C</a></td>
+                <td><a (click)="updatePageNumber(401)" href="groupc.html">Group C</a></td>
                 <td id="tdno">401</td>
 
                 <tr>
-                    <td><a href="groupd.html">Group D</a></td>
+                    <td><a (click)="updatePageNumber(501)" href="groupd.html">Group D</a></td>
                     <td id="tdno">501</td>
                 </tr>
             </table>
@@ -59,22 +60,22 @@
                 
                 
                 <tr>
-                <td><a href="groupe.html">Group E</a></td>
+                <td><a (click)="updatePageNumber(601)" href="groupe.html">Group E</a></td>
                 <td id="tdno">601</td>
                 </tr>
 
                 <tr>
-                <td><a href="groupf.html">Group F</a></td>
+                <td><a (click)="updatePageNumber(701)" href="groupf.html">Group F</a></td>
                 <td id="tdno">701</td>
                 </tr>
 
                 <tr>
-                    <td><a href="groupg.html">Group G</a></td>
+                    <td><a (click)="updatePageNumber(801)" href="groupg.html">Group G</a></td>
                     <td id="tdno">801</td>
                     </tr>
 
                     <tr>
-                        <td><a href="grouph.html">Group H</a></td>
+                        <td><a (click)="updatePageNumber(901)" href="grouph.html">Group H</a></td>
                         <td id="tdno">901</td>
                         </tr>
             </table>
