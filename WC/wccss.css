@@ -166,7 +166,7 @@ font-size: 30px;
   color: white;
   text-align: center;
   padding: 15px;
-  margin-right: 5%;
+  margin-right: 3%;
 
     
   }
@@ -263,6 +263,10 @@ grid-column: 2;
     font-size: 36px;
   }
 
+  #luh1 {
+    font-size: 32px;
+  }
+
   .LineUps {
     display: flex; 
     color:rgb(0, 225, 255); 
@@ -275,14 +279,16 @@ grid-column: 2;
     
   }
 
-#Page1 {
+.mySlides {
+  display: none;
+  padding: 5px;
 
 }
 
-
-  #Page2 { 
-    display: 
-  }
+.stats {
+  padding: 5%;
+}
+  
   
   /* Make sure that padding behaves as expected */
 * {box-sizing:border-box}
@@ -291,13 +297,14 @@ grid-column: 2;
 .container {
   width: 100%; /* Full width */
   background-color: rgb(47, 255, 47); /* Grey background */
+  
 }
 
 .Stat {
   text-align: right; /* Right-align text */
   padding-top: 10px; /* Add top padding */
   padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
+  color: black; /* White text color */
 }
 
 .Possession {

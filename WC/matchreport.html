@@ -10,13 +10,13 @@
         </html>
         <div class="parent">
         <header>
-            <script src="wc.js"> </script>
+            <script src="wc.js">  </script>
             <ul class="headerul">
                 <li class="lih">Croonfax 1</li> 
                 <li class="lih">Page 301</li>
                 <li class="lih"><span id="time"> </span> </li>
                 </ul>
-            
+                <script src="wc.js">  </script>
             <div class="headbox">
             <img class="headimg1" src="MC.jpg" alt="Teletext fonts">
             <img class="headimg2" src="QATAR1.jpg" alt="Teletext fonts">
@@ -25,7 +25,7 @@
         </header>
         
         <body> 
-            
+         
 <div class="mySlides">
             <p class="pgreen">How to write a report in ceefax </p>
 <p class="pwhite">The top paragraph of a really good ceefaxx match report should endeavour to tell the key story of the match, such as who scored the winner. </p>
@@ -40,8 +40,11 @@ Write four paragraphs totalling about 80 words, with a minimum of two lines and 
 
 <div class="mySlides">
         <div class="LineUps">
+            <h1 id="luh1">Line-Ups</h1>
+            
             
             <div class="HomeLineUp"> 
+            
                 <table class="HLUTable">
                     <tr>
                       <th>Home Placeholder</th>
@@ -178,7 +181,7 @@ Write four paragraphs totalling about 80 words, with a minimum of two lines and 
             <div class="Stat Fouls">10</div>
             </div>
 
-            
+
             </div>
 
 
@@ -192,9 +195,24 @@ Write four paragraphs totalling about 80 words, with a minimum of two lines and 
 
         </div>
 
+    
 
+        <script>
+        var slideIndex = 0;
+carousel();
 
-        
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 5000); 
+        }
+        </script>
 
 </body>
 
