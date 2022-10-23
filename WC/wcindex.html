@@ -11,13 +11,13 @@
             </html>
             <div class="parent">
             <header>
-                <script async src="wc.js"> </script>
+                <script src="wc.js"> </script>
                 <ul class="headerul">
                     <li class="lih">Croonfax 1</li> 
-                    <li class="lih">Page Number: <span id="pageNumberValue">101 </span></li>
+                    <li class="lih">Page: <span id="pageNumberValue">101 </span></li>
                     <li class="lih"><span id="time"> </span> </li>
                     </ul>
-            
+                    <script src="wc.js"> </script>
                 <div class="headbox">
                 <img class="headimg1" src="MC.jpg" alt="Teletext fonts">
                 <img class="headimg2" src="QATAR1.jpg" alt="Teletext fonts">
@@ -87,6 +87,30 @@
             
 
 </body>
+
+
+<script>
+    public updatePageNumber(target: number): void {
+  let current = parseInt(document.getElementById('pageNumberValue').innerText)
+  const diff = Math.abs(target - current); 
+  const isAscending = target > current;
+  let i = 0;
+
+   while(i<=diff) {
+    setTimeout(function() {
+      if(current === target) {
+        alert('do your navigate stuff here maybe')
+      }
+      document.getElementById('pageNumberValue').innerText =
+      current.toString();
+      isAscending? current++ : current--
+    }, 10 * i);
+    
+    i++
+  }
+}
+
+</script>
 
 
 <footer>
