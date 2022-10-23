@@ -90,25 +90,25 @@
 
 
 <script>
-    public updatePageNumber(target: number): void {
-  let current = parseInt(document.getElementById('pageNumberValue').innerText)
-  const diff = Math.abs(target - current); 
-  const isAscending = target > current;
-  let i = 0;
+      public updatePageNumber(target: number): void {
+    let current = parseInt(document.getElementById('pageNumberValue').innerText)
+    const diff = Math.abs(target - current); 
+    const isAscending = target > current;
+    let i = 0;
 
-   while(i<=diff) {
-    setTimeout(function() {
-      if(current === target) {
-        alert('do your navigate stuff here maybe')
-      }
-      document.getElementById('pageNumberValue').innerText =
-      current.toString();
-      isAscending? current++ : current--
-    }, 10 * i);
-    
-    i++
+     while(i<=diff) {
+      setTimeout(function() {
+        if(current === target) {
+          alert('do your navigate stuff here maybe')
+        }
+        document.getElementById('pageNumberValue').innerText =
+        current.toString();
+        isAscending? current++ : current--
+      }, 10 * i);
+      
+      i++
+    }
   }
-}
 
 </script>
 
