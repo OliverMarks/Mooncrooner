@@ -7,7 +7,7 @@
         <link rel="stylesheet" 			href="wccss.css">
         <link href="https://db.onlinewebfonts.com/c/a0cb693c715aaf804e67963c4d0d4d90?family=ModeSeven" rel="stylesheet" type="text/css"/>
         <title>Croonfax - Group B </title>
-        </html>
+        
         <div class="parent">
         <header>
             <script src="wc.js"> </script>
@@ -18,16 +18,16 @@
                 </ul>
             <script src="wc.js"> </script>
             <div class="headbox">
-            <img class="headimg1" src="MC.jpg" alt="Teletext fonts">
-            <img class="headimg2" src="QATAR1.jpg" alt="Teletext fonts">
+            <img class="headimg1" src="wcimgs/MC.jpg" alt="Teletext fonts">
+            <img class="headimg2" src="wcimgs/QATAR1.jpg" alt="Teletext fonts">
         </div>
         <div class="title">
         <h1>Group B  </h1> 
         <div class="flagbox">
-            <img class="flag" src="Eng.png">
-            <img class="flag" src="Iran.png">
-            <img class="flag" src="USA.png">
-            <img class="flag" src="Wales.png">
+            <img class="flag" src="wcimgs/Eng.png">
+            <img class="flag" src="wcimgs/Iran.png">
+            <img class="flag" src="wcimgs/USA.png">
+            <img class="flag" src="wcimgs/Wales.png">
         </div>
     </div>
     </div>
@@ -96,17 +96,43 @@
 
         
 
-</body>
-
-
-<footer>
-<p class="footerp">Croonfax: The world in an outdated and inconvinent format</p> 
-<ul class="footerlist">
-    <a href="wcindex.html"><li style=color:red; class="lif">Home</li></a>
-    <a href="knockout.html"><li style="color:rgb(18, 202, 18);" class="lif">Knockout Stage</li></a> 
-    <a href="https://oilythighs.github.io/Mooncrooner/"><li style="color:yellow;" class="lif">MoonCrooner Blog</li></a> 
-    <a id="back-link"><li style="color:rgb(129, 214, 253);" class="lif">Previous Page</li></a>
-    </ul>
-</footer>
-
-</div>
+              <script>
+                function updatePageNumber(target, link) {
+              let current = parseInt(document.getElementById('pageNumberValue').innerText)
+              const diff = Math.abs(target - current); 
+              const isAscending = target > current;
+              let i = 0;
+          
+               while(i<=diff) {
+                setTimeout(function() {
+                  if(current === target) {
+                    window.location.href = link  
+                  }
+                  document.getElementById('pageNumberValue').innerText =
+                  current.toString();
+                  isAscending? current++ : current--
+                }, 10 * i);
+                
+                i++
+              }
+            }
+          
+          </script>
+          
+          
+          <footer>
+              <p class="footerp">Croonfax: The world in an outdated and inconvinent format</p> 
+          <ul class="footerlist">
+              <a onclick="updatePageNumber(101, 'wcindex.html')> <li class="lif indexFooter">Home</li></a>
+              <a onclick="updatePageNumber(1001, 'knockout.html')><li class="lif koFooter">Knockout Stage</li></a> 
+              <a href="https://oilythighs.github.io/Mooncrooner/"><li style="color:yellow;" class="lif">MoonCrooner Blog</li></a> 
+              <a id="back-link"><li style="color:rgb(129, 214, 253);" class="lif">Previous Page</li></a>
+              </ul>
+          </footer>
+          
+          </div>
+          
+          
+          </body>
+          
+          </html>

@@ -12,33 +12,23 @@ function refreshTime() {
     setInterval(refreshTime, 1000);
     
 
-// Page counter 
+// MR Reports 
+var slideIndex = 0;
+carousel();
 
 
-public updatePageNumber(target: number): void {
-  let current = parseInt(document.getElementById('pageNumberValue').innerText)
-  const diff = Math.abs(target - current); 
-  const isAscending = target > current;
-  let i = 0;
-
-   while(i<=diff) {
-    setTimeout(function)() {
-      if(current === target) {
-        alert('do your navigate stuff here maybe')
-
-      }
-      document.getElementById('pageNumberValue').innerText =
-      current.toString();
-      isAscending? current++ : current--
-    }, 10 * i);
-    
-    i++
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
   }
-}
-
-
-    
-
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 50000); 
+        }
+       
 
 
 
@@ -64,20 +54,7 @@ element.onclick = function() {
 
 
 
-var myIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
 
 
 
