@@ -8,7 +8,7 @@
             <link rel="stylesheet" 			href="wccss.css">
             <link href="https://db.onlinewebfonts.com/c/a0cb693c715aaf804e67963c4d0d4d90?family=ModeSeven" rel="stylesheet" type="text/css"/>
             <title>Croonfax</title>
-            </html>
+            
             <div class="parent">
             <header>
                 <script src="wc.js"> </script>
@@ -19,8 +19,8 @@
                     </ul>
                     <script src="wc.js"> </script>
                 <div class="headbox">
-                <img class="headimg1" src="MC.jpg" alt="Teletext fonts">
-                <img class="headimg2" src="QATAR1.jpg" alt="Teletext fonts">
+                <img class="headimg1" src="wcimgs/MC.jpg" alt="Teletext fonts">
+                <img class="headimg2" src="wcimgs/QATAR1.jpg" alt="Teletext fonts">
             </div>
 
             </header>
@@ -37,21 +37,21 @@
 
                 <table class="indexContentleft">
                 <tr>
-                    <td><a (click)="updatePageNumber(201)" href="groupa.html"> Group A</a></td>
+                    <td><a onclick="updatePageNumber(201, 'groupa.html')"> Group A</a></td>
                     <td id="tdno">201</td>
                 </tr>
                 
                 <tr>
-                <td><a (click)="updatePageNumber(301)" href="groupb.html">Group B</a></td>
+                    <td><a onclick="updatePageNumber(301, 'groupb.html')"> Group B</a></td>
                 <td id="tdno">301</td>
                 </tr>
 
                 <tr>
-                <td><a (click)="updatePageNumber(401)" href="groupc.html">Group C</a></td>
+                    <td><a onclick="updatePageNumber(401, 'groupc.html')"> Group C</a></td>
                 <td id="tdno">401</td>
 
                 <tr>
-                    <td><a (click)="updatePageNumber(501)" href="groupd.html">Group D</a></td>
+                    <td><a onclick="updatePageNumber(501, 'groupd.html')"> Group D</a></td>
                     <td id="tdno">501</td>
                 </tr>
             </table>
@@ -60,22 +60,22 @@
                 
                 
                 <tr>
-                <td><a (click)="updatePageNumber(601)" href="groupe.html">Group E</a></td>
+                    <td><a onclick="updatePageNumber(601, 'groupe.html')"> Group E</a></td>
                 <td id="tdno">601</td>
                 </tr>
 
                 <tr>
-                <td><a (click)="updatePageNumber(701)" href="groupf.html">Group F</a></td>
+                    <td><a onclick="updatePageNumber(701, 'groupf.html')"> Group F</a></td>
                 <td id="tdno">701</td>
                 </tr>
 
                 <tr>
-                    <td><a (click)="updatePageNumber(801)" href="groupg.html">Group G</a></td>
+                    <td><a onclick="updatePageNumber(801, 'groupg.html')"> Group G</a></td>
                     <td id="tdno">801</td>
                     </tr>
 
                     <tr>
-                        <td><a (click)="updatePageNumber(901)" href="grouph.html">Group H</a></td>
+                        <td><a onclick="updatePageNumber(901, 'grouph.html')"> Group H</a></td>
                         <td id="tdno">901</td>
                         </tr>
             </table>
@@ -86,11 +86,11 @@
 
             
 
-</body>
+
 
 
 <script>
-      public updatePageNumber(target: number): void {
+      function updatePageNumber(target, link) {
     let current = parseInt(document.getElementById('pageNumberValue').innerText)
     const diff = Math.abs(target - current); 
     const isAscending = target > current;
@@ -99,7 +99,7 @@
      while(i<=diff) {
       setTimeout(function() {
         if(current === target) {
-          alert('do your navigate stuff here maybe')
+          window.location.href = link  
         }
         document.getElementById('pageNumberValue').innerText =
         current.toString();
@@ -116,8 +116,8 @@
 <footer>
     <p class="footerp">Croonfax: The world in an outdated and inconvinent format</p> 
 <ul class="footerlist">
-    <a href="wcindex.html"><li style=color:red; class="lif">Home</li></a>
-    <a href="knockout.html"><li style="color:rgb(18, 202, 18);" class="lif">Knockout Stage</li></a> 
+    <a onclick="updatePageNumber(101, 'wcindex.html')> <li style=color:red; class="lif">Home</li></a>
+    <a onclick="updatePageNumber(1001, 'knockout.html')><li style="color:rgb(18, 202, 18);" class="lif">Knockout Stage</li></a> 
     <a href="https://oilythighs.github.io/Mooncrooner/"><li style="color:yellow;" class="lif">MoonCrooner Blog</li></a> 
     <a id="back-link"><li style="color:rgb(129, 214, 253);" class="lif">Previous Page</li></a>
     </ul>
@@ -126,7 +126,9 @@
 </div>
 
 
+</body>
 
+</html> 
 
 
 
