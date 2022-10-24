@@ -69,11 +69,11 @@ font-size: 30px;
 .headbox{
     clear: left;
     display: flex;
-    flex-wrap: wrap;
+    
 }
 .headimg1 .headimg2 {
         flex: 50%;
-        width: 100%;
+        width: 90%;
     
       }
 
