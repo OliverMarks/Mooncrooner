@@ -272,23 +272,62 @@ grid-column: 2;
   .LineUps {
     display: flex; 
     color:rgb(0, 225, 255); 
-    font-size: 30px;
+    font-size: 34px;
     white-space: nowrap;
   }
   
-  .HomeLineUp {
+  .HomeLineUp > ul li {
     color: white;
+    list-style-type: none;
     
   }
 
+  .AwayLineUp > ul li  {
+    list-style-type:  none;
+  }
+
+  .HLUTable .ALUTable {
+  border-spacing:0px; 
+
+  }
+
+  .pitchimg {
+    padding: 10px;
+  }
+
 .mySlides {
-  display: none;
+  display:block;
   padding: 5px;
 
 }
 
+#statsh1 {
+  font-size: 34px;
+  display: inline-block;
+  margin-right: 440px;
+}
+
 .stats {
   padding: 5%;
+}
+
+table.statsTable {
+  margin-top: -80px;
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  border-bottom: 1px;
+}
+
+table.statsTable tr {
+  border-bottom:2px solid white; }
+
+#tdcentre {
+  color: rgb(47, 255, 47);
+}
+
+#tdaway {
+  color:rgb(0, 225, 255)
 }
   
   
