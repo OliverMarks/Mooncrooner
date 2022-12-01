@@ -1,35 +1,10 @@
-# bloggo
-read bee
+Projects Related to learning HTML/CSS/JS 
 
+Mooncrooner Blog 
+- Sandbox blog 
 
-issue/to do log 
-
-General 
-- mobile compatability 
-
-
-Index
-- gap between coloumns on lapscreen looks off
-
-page indexes 
-- search bar / #tags once more content 
-
-
-moosick
-- close on the modals not working 
-
-contact page
-- create
-
-
-
-Page ideas 
-- tier lists using grids 
-- judge john deed retrospective 
-- fake court cases 
-- inter-blog sniping of harry bawkins
-- possible controversy around re branding from Croonmooner (legal battle from this?)
-
+Croonfax 
+- project to replicate the design and functionality of Ceefax on a platform to host mostly self generated match reports for the 2022 Qatar World Cup 
 
 
 
